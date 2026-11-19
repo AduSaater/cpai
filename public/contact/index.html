@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Secret Place by CPAI</title>
+    <meta
+      name="description"
+      content="Contact Secret Place by CPAI for support, devotional feedback, or privacy inquiries."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background-color: #faf8f5;
+        color: #0f172a;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          sans-serif;
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        background-color: #1e293b;
+        color: #ffffff;
+        box-shadow: 0 2px 4px rgba(15, 23, 42, 0.12);
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+      }
+      .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0.75rem 0;
+      }
+      .brand {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.125rem;
+      }
+      nav {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.5rem 0.875rem;
+        border-radius: 8px;
+        font-weight: 500;
+      }
+      nav a[aria-current='page'] {
+        background-color: rgba(255, 255, 255, 0.16);
+        font-weight: 700;
+      }
+      nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      main {
+        flex: 1;
+        padding: 2.5rem 1.25rem;
+      }
+      .card {
+        max-width: 820px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 3px 10px rgba(15, 23, 42, 0.08);
+      }
+      .breadcrumbs {
+        font-size: 0.9rem;
+        color: #475569;
+        margin-bottom: 1rem;
+      }
+      .breadcrumbs a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .breadcrumbs a:hover {
+        text-decoration: underline;
+      }
+      h1 {
+        font-size: 1.875rem;
+        line-height: 1.25;
+        margin: 0 0 0.5rem;
+      }
+      .lead {
+        color: #475569;
+        margin: 0 0 1.75rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1.35fr 1fr;
+        gap: 2rem;
+      }
+      @media (max-width: 720px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin: 0 0 1rem;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        margin-bottom: 1.15rem;
+      }
+      label {
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+      .hint {
+        color: #475569;
+        font-size: 0.85rem;
+      }
+      input,
+      select,
+      textarea {
+        font: inherit;
+        font-size: max(1rem, 1em);
+        padding: 0.7rem 0.75rem;
+        min-height: 48px;
+        border: 1.5px solid #64748b;
+        border-radius: 8px;
+        background-color: #ffffff;
+        color: #0f172a;
+        width: 100%;
+      }
+      textarea {
+        min-height: 132px;
+        resize: vertical;
+      }
+      button[type='submit'] {
+        font: inherit;
+        font-weight: 600;
+        background-color: #1e293b;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        padding: 0.75rem 1.5rem;
+        min-height: 48px;
+        cursor: pointer;
+      }
+      button[type='submit']:hover {
+        background-color: #0f172a;
+      }
+      .aside-box {
+        padding: 1.5rem;
+        border-radius: 10px;
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+      }
+      .aside-box p {
+        margin: 0 0 1rem;
+        color: #475569;
+        font-size: 0.95rem;
+      }
+      .aside-box hr {
+        border: none;
+        border-top: 1px solid #e2e8f0;
+        margin: 1.25rem 0;
+      }
+      a {
+        color: #1d4ed8;
+      }
+      footer {
+        border-top: 1px solid #e2e8f0;
+        background-color: #ffffff;
+        padding: 1.5rem 0;
+        margin-top: auto;
+        font-size: 0.875rem;
+        color: #475569;
+      }
+      .footer-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .footer-links {
+        display: flex;
+        gap: 1.5rem;
+      }
+      .footer-links a {
+        color: #1e293b;
+        text-decoration: none;
+      }
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav-bar">
+        <a class="brand" href="/">Secret Place by CPAI</a>
+        <nav aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/contact" aria-current="page">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a> / <span>Contact Us</span>
+        </div>
+
+        <h1>Contact Us</h1>
+        <p class="lead">
+          We would love to hear from you. Whether you have questions about
+          Secret Place by CPAI, devotional feedback, or privacy concerns, reach
+          out below.
+        </p>
+
+        <div class="grid">
+          <form
+            action="mailto:eghrudjemiracle24@gmail.com"
+            method="POST"
+            enctype="text/plain"
+            aria-labelledby="contact-form-heading"
+          >
+            <h2 id="contact-form-heading">Send a Message</h2>
+
+            <div class="field">
+              <label for="contact-name">Full name *</label>
+              <input
+                id="contact-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="contact-email">Email address *</label>
+              <span class="hint">Format: you@example.com</span>
+              <input
+                id="contact-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="contact-topic">Topic</label>
+              <select id="contact-topic" name="topic">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Privacy & Data Request">Privacy &amp; Data Request</option>
+                <option value="Devotional Feedback">Devotional Feedback</option>
+                <option value="Technical Support">Technical Support</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="contact-message">Message *</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                minlength="10"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
+
+          <aside class="aside-box">
+            <h2>Direct Contact</h2>
+            <p>
+              Prefer to email us directly? Reach our support and privacy team at:
+            </p>
+            <p>
+              <a href="mailto:eghrudjemiracle24@gmail.com">
+                eghrudjemiracle24@gmail.com
+              </a>
+            </p>
+            <hr />
+            <h3>Privacy Inquiries</h3>
+            <p>
+              For account data updates, unsubscribe requests, or questions about
+              how we handle your information, please review our
+              <a href="/privacy-policy">Privacy Policy</a>.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-row">
+        <span>Secret Place by CPAI. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/contact">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
